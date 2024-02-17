@@ -1,19 +1,53 @@
 .advantageMainDiv {
     margin-top: 50px;
-    margin-bottom: 100px;
+    animation: slideFromLeft 3s ease-in forwards;
+    transform: translateX(-100vw);
+
+
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100vw);
+        /* Start position outside the viewport */
+    }
+
+    to {
+        transform: translateX(0px);
+        /* End position at the left edge of the viewport */
+    }
 }
 
 .advantageMainDiv img {
     width: 600px;
-    height: 600px;
+    height: 560px;
 }
 
 .contentDiv {
     padding: 20px 50px;
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 70px;
+    font-weight: 700;
+    background: url(/Homepageimages/water-drop-background.png)
 }
 
-.advantageTitle {
+.advantageTitle,
+.brandName {
     color: var(--blueBackground);
+}
+
+.advantageContent {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.contentDiv button {
+    background: var(--blueBackground) !important;
+    color: white;
+
+}
+
+.contentDiv button :hover {
+    color: white;
+    font-weight: 700;
 }

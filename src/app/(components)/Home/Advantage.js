@@ -1,6 +1,6 @@
 import React from "react";
 import "./Advantage.css";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 function Advantage() {
   return (
     <div className="advantageMainDiv">
@@ -8,10 +8,20 @@ function Advantage() {
         <Col xxl={13} xl={14} lg={14} md={12}>
           <div className="contentDiv">
             <p>
-              The <span>Prime Water</span>
+              The <span>Benefits of</span>
               <br />
-              <span className="advantageTitle">Advantage</span>
+              <span className="advantageTitle">Prime Water</span>
             </p>
+            <p className="advantageContent">
+              Plastic containers often contain water that is not suitable for
+              consumption, and conventional water purifiers tend to inadequately
+              regulate purification levels, leading to either insufficient or
+              excessive purification. As water quality varies from one location
+              to another, we tailor your{" "}
+              <span className="brandName"> Prime Water </span>system to
+              precisely meet the specific purification needs of your area.
+            </p>
+            <Button size="large">Discover More About us</Button>
           </div>
         </Col>
         <Col xxl={9} xl={10} lg={10} md={12}>
