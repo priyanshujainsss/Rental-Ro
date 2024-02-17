@@ -8,8 +8,8 @@
 
 .menuHeader {
     background-color: white;
-    /* color: rgb(84, 4, 181); */
-    background-color: rgb(84, 4, 181);
+    /* color: var(--blueBackground); */
+    background-color: var(--blueBackground);
 
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,19 @@
+.advantageMainDiv {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.advantageMainDiv img {
+    width: 600px;
+    height: 600px;
+}
+
+.contentDiv {
+    padding: 20px 50px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.advantageTitle {
+    color: var(--blueBackground);
+}

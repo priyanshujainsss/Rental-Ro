@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-      <AntdRegistry>{children}</AntdRegistry>
+        <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
   );

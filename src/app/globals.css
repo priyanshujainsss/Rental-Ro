@@ -1,4 +1,8 @@
-*{
-    
+:root {
+    --blueBackground: rgb(84, 4, 181)
+}
+
+* {
+
     margin: 0;
 }

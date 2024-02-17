@@ -1,0 +1,67 @@
+.mainHomeCardDiv {
+    margin-top: 30px;
+    margin-inline: 20%;
+}
+
+.homeCard {
+    background-color: var(--blueBackground);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    color: white;
+}
+
+.homeCard div {
+    display: flex;
+    align-items: center;
+}
+
+.homeCard img {
+    width: 100px;
+}
+
+@media screen and (max-width:1024px) {
+    .homeCard {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainHomeCardDiv {
+        margin-inline: 8%;
+    }
+
+    .homeCard {
+        font-size: 20px;
+    }
+
+    .homeCard img {
+        width: 70px;
+
+    }
+}
+
+@media screen and (max-width:426px) {
+    .homeCard {
+        font-size: 14px;
+    }
+
+    .homeCard img {
+        width: 70px;
+
+    }
+}
+
+@media screen and (max-width:376px) {
+    .homeCard {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .homeCard img {
+        width: 60px;
+
+    }
+}
