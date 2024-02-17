@@ -1,0 +1,43 @@
+.mobileMenu {
+    background-color: rgb(115, 14, 239);
+
+    font-size: 18px;
+    color: white;
+    line-height: 45px;
+}
+
+.menuHeader {
+    background-color: white;
+    /* color: rgb(84, 4, 181); */
+    background-color: rgb(84, 4, 181);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 58px;
+    font-weight: 500 !important;
+    align-items: center;
+    font-size: 25px;
+    align-items: end;
+}
+
+
+.mobilelogodiv {
+    align-items: center;
+    display: flex;
+    font-size: 25px !important;
+    height: 57px;
+}
+
+.menuHeader img {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.menuitems {
+    padding: 30px 50px;
+
+}

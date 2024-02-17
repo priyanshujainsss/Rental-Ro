@@ -1,0 +1,30 @@
+.navbar {
+    background-color: rgb(84, 4, 181);
+    height: 70px;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+
+.logoDiv {
+    align-items: center;
+    display: flex;
+    font-size: 25px !important;
+
+}
+
+.logoDiv img {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar_items {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    font-size: 19px;
+    cursor: pointer;
+    float: inline-end;
+}
