@@ -1,6 +1,7 @@
 import React from "react";
 import "./Advantage.css";
 import { Button, Col, Row } from "antd";
+import Image from "next/image";
 function Advantage() {
   return (
     <div className="advantageMainDiv">
@@ -25,7 +26,12 @@ function Advantage() {
           </div>
         </Col>
         <Col xxl={9} xl={10} lg={12} md={24} sm={24} xs={24}>
-          <img src={`/Homepageimages/Roadvantage.webp`} />
+          <Image
+            width={100}
+            height={100}
+            alt="benefits image"
+            src={`/Homepageimages/Roadvantage.webp`}
+          />
         </Col>
       </Row>
     </div>
