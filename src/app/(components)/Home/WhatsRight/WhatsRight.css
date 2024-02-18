@@ -6,22 +6,25 @@
 
 .HeadingDiv {
     height: 200px;
-    background-color: aqua;
+    background-color: var(--blueBackground);
     align-items: center;
     display: flex;
     text-align: center;
-    border-radius: 20px !important;
+    border-radius: 20px 0px 20px 0px !important;
+    justify-content: center;
+    color: white;
+
 
 }
 
 .heading {
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 600;
 
 }
 
 .rightitems {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
 }
@@ -29,26 +32,171 @@
 .rightitems p {
     height: 40px;
     text-transform: uppercase;
-    background-color: aquamarine;
+    background-color: var(--blueBackground);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--blueBackground);
+    border-radius: 20px 20px 20px 0px !important;
+    border-top: 1px solid black;
+    border-width: 4px;
     font-weight: 500;
-    border-radius: 20px !important;
+    color: white;
 
 
 }
 
-.itemOdd {
-    background-color: rgb(180, 241, 230) !important;
+
+.watercancol {
+    display: flex !important;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
 }
 
-.itemEven {
-    background-color: rgba(215, 251, 246, 0.852) !important;
+.HeadingImageDiv {
+    height: 200px;
+    background-color: rgb(110, 109, 109);
+    border-radius: 20px 0px;
+
+
 }
 
 .HeadingImageDiv img {
+    height: 150px;
+    width: 50%
+}
+
+.HeadingImageDiv p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.otheritems p {
+    border: 1px solid white;
+    height: 42px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 20px 0px;
+    background-color: rgb(110, 109, 109);
+}
+
+.PrimeWaterDiv {
     height: 200px;
-    width: 100%
+    background-color: rgb(56, 199, 243);
+    border-radius: 20px 0px 20px 0px;
+    color: var(--blueBackground);
+    border: 1px solid var(--blueBackground);
+
+
+}
+
+.PrimeWaterDiv img {
+    height: 150px;
+    width: 50%
+}
+
+.PrimeWaterDiv p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.primeWateritems p {
+    border: 2px solid var(--blueBackground);
+    color: var(--blueBackground);
+    font-weight: 500;
+    height: 40px;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 20px 0px 20px 0px;
+    background-color: rgb(56, 199, 243);
+}
+
+@media screen and (max-width:1024px) {
+    .mainDiv {
+        margin: 100px 40px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainDiv {
+        margin: 100px 0px;
+
+    }
+
+    .watercancol {
+        display: none !important;
+    }
+
+    .HeadingImageDiv,
+    .PrimeWaterDiv {
+        display: grid;
+
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .watercancol {
+        display: none !important;
+
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .rightitems {
+        font-size: 11px !important;
+    }
+
+    .primeWateritems p {
+        font-size: 11px;
+
+    }
+
+    .otheritems p {
+        font-size: 11px;
+    }
+
+
+    .HeadingImageDiv,
+    .PrimeWaterDiv {
+        display: grid;
+
+        justify-items: center;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+    .heading {
+        font-size: 23px;
+    }
+
+    .rightitems {
+        font-size: 10px;
+    }
+
+    .primeWateritems p {
+        font-size: 10px;
+
+    }
+
+    .otheritems p {
+        font-size: 10px;
+    }
+
 }
