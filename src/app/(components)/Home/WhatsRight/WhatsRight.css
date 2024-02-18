@@ -127,6 +127,10 @@
         margin: 100px 40px;
 
     }
+
+    .watercancol {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width:768px) {
