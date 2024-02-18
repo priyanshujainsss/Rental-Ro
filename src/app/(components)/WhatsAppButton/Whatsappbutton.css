@@ -1,0 +1,10 @@
+.Whatsappbutton {
+
+    position: fixed;
+
+    bottom: 15px;
+    right: 35px;
+
+
+    z-index: 100;
+}
