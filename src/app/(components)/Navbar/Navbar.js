@@ -8,6 +8,13 @@ import "./Navbar.css";
 import MobileMenuItems from "./MobileMenuItems";
 function Navbar() {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div>
       {isMobileMenu ? (
@@ -28,7 +35,7 @@ function Navbar() {
             <div className="navbar_items">
               <p>Home</p>
               <p>Product</p>
-              <p>Plans</p>
+              <p onClick={() => scrollToSection("plans")}>Plans</p>
               <p>How It Works</p>
               <p>About us</p>
               <Button>Contact us</Button>

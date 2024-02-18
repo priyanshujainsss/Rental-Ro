@@ -7,6 +7,13 @@ import { Button } from "antd";
 // import { Container } from './styles';
 
 function MobileMenuItems({ setIsMobileMenu }) {
+  function scrollToSection(sectionId) {
+    setIsMobileMenu(false);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <div className="mobileMenu">
       <div className="menuHeader">
@@ -24,7 +31,7 @@ function MobileMenuItems({ setIsMobileMenu }) {
       <div className="menuitems">
         <p>Home</p>
         <p>About us</p>
-        <p>Plans</p>
+        <p onClick={() => scrollToSection("plans")}>Plans</p>
         <p>How It Works</p>
         <p>About us</p>
         <Button>Contact us</Button>

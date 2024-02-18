@@ -1,0 +1,101 @@
+.mainPlanDiv {
+    margin-bottom: 100px;
+}
+
+.MainPlanHeading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.planRows {
+    margin-inline: 50px !important;
+    margin-top: 25px;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    background-color: var(--blueBackground);
+    color: white;
+    /* height: 400px; */
+    /* width: 80%; */
+    /* padding-inline: 50px; */
+    /* width: 100%; */
+}
+
+.planName {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 7px solid white;
+}
+
+.planBody {
+    text-align: center;
+
+}
+
+.planBody .amount {
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+.monthly {
+    font-size: 27px;
+}
+
+.PlanFeatures {
+    margin-top: 24px;
+    line-height: 35px;
+}
+
+.divider {
+    margin-inline: 55px;
+}
+
+.divider .mainDivider {
+    background-color: white;
+    height: 3px;
+    margin: 0;
+}
+
+.plan button {
+    margin-top: 14px;
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .refund {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-inline: 60px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .plan {
+        width: 100%;
+    }
+
+    .planRows {
+        display: grid !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+
+
+    .planRows {
+        margin-inline: 20px !important;
+    }
+}
