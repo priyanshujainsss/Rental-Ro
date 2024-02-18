@@ -25,7 +25,7 @@ function WhatsRight() {
         </Col>
         <Col xxl={5} xl={5} lg={5}>
           <div className="HeadingImageDiv">
-            <img src="https://5.imimg.com/data5/NI/CJ/MY-9970411/20-ltr-packaged-drinking-water-jar.jpg" />
+            {/* <img src="https://5.imimg.com/data5/NI/CJ/MY-9970411/20-ltr-packaged-drinking-water-jar.jpg" /> */}
           </div>
         </Col>
         <Col xxl={6} xl={6} lg={6}></Col>
