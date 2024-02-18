@@ -1,0 +1,54 @@
+.mainDiv {
+    margin: 100px 80px;
+}
+
+
+
+.HeadingDiv {
+    height: 200px;
+    background-color: aqua;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 20px !important;
+
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.rightitems {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.rightitems p {
+    height: 40px;
+    text-transform: uppercase;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blueBackground);
+    font-weight: 500;
+    border-radius: 20px !important;
+
+
+}
+
+.itemOdd {
+    background-color: rgb(180, 241, 230) !important;
+}
+
+.itemEven {
+    background-color: rgba(215, 251, 246, 0.852) !important;
+}
+
+.HeadingImageDiv img {
+    height: 200px;
+    width: 100%
+}
