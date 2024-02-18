@@ -6,7 +6,9 @@ import { Spin as Hamburger, Spin } from "hamburger-react";
 // import { Container } from './styles';
 import "./Navbar.css";
 import MobileMenuItems from "./MobileMenuItems";
+import { useRouter } from "next/navigation";
 function Navbar() {
+  const router = useRouter();
   const [isMobileMenu, setIsMobileMenu] = useState(false);
   function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -37,7 +39,7 @@ function Navbar() {
               <p>Product</p>
               <p onClick={() => scrollToSection("plans")}>Plans</p>
               <p>How It Works</p>
-              <p>About us</p>
+              <p onClick={() => router.push("aboutUs")}>About us</p>
               <Button>Contact us</Button>
             </div>
           </Col>

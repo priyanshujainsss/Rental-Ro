@@ -3,12 +3,15 @@ import "./MobileMenuItem.css";
 import { CloseOutlined } from "@ant-design/icons";
 import { Spin as Hamburger, Spin } from "hamburger-react";
 import { Button } from "antd";
+import { useRouter } from "next/navigation";
 
 // import { Container } from './styles';
 
 function MobileMenuItems({ setIsMobileMenu }) {
+  const router = useRouter();
   function scrollToSection(sectionId) {
     setIsMobileMenu(false);
+
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -29,11 +32,25 @@ function MobileMenuItems({ setIsMobileMenu }) {
         {/* <CloseOutlined /> */}
       </div>
       <div className="menuitems">
-        <p>Home</p>
-        <p>About us</p>
+        <p
+          onClick={() => {
+            setIsMobileMenu(false);
+            router.push("/");
+          }}
+        >
+          Home
+        </p>
+        <p>Product</p>
         <p onClick={() => scrollToSection("plans")}>Plans</p>
         <p>How It Works</p>
-        <p>About us</p>
+        <p
+          onClick={() => {
+            setIsMobileMenu(false);
+            router.push("/aboutUs");
+          }}
+        >
+          About us
+        </p>
         <Button>Contact us</Button>
       </div>
     </div>

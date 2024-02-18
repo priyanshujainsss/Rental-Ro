@@ -1,0 +1,35 @@
+.aboutTitle {
+    height: 400px;
+    background: url(/Homepageimages/aboutusgif2.gif);
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    /* object-fit: contain; */
+}
+
+.aboutTitle h1 {
+    display: grid;
+    align-content: center;
+}
+
+.aboutuspage p {
+    padding-top: 20px;
+    font-size: 24px;
+    padding-inline: 50px;
+}
+
+.brandName {
+    color: var(--blueBackground);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:768px) {
+    .aboutuspage p {
+
+        font-size: 20px;
+    }
+
+}
