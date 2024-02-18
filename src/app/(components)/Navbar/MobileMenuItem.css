@@ -4,6 +4,9 @@
     font-size: 18px;
     color: white;
     line-height: 45px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .menuHeader {

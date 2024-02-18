@@ -19,8 +19,8 @@
 }
 
 .advantageMainDiv img {
-    width: 600px;
-    height: 560px;
+    width: 100%;
+    height: 100%;
 }
 
 .contentDiv {
@@ -50,4 +50,46 @@
 .contentDiv button :hover {
     color: white;
     font-weight: 700;
+}
+
+@media screen and (max-width:1024px) {
+
+    .advantageMainDiv img {
+        width: 100%;
+        height: 100%
+    }
+
+    .contentDiv {
+        font-size: 60px;
+    }
+
+    .advantageContent {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+
+    .contentDiv {
+        font-size: 50px;
+    }
+
+    .advantageContent {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+
+    .contentDiv {
+        font-size: 40px;
+    }
+
+    .advantageContent {
+        font-size: 21px;
+    }
 }

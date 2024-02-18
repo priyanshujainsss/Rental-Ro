@@ -5,7 +5,7 @@ function Advantage() {
   return (
     <div className="advantageMainDiv">
       <Row>
-        <Col xxl={13} xl={14} lg={14} md={12}>
+        <Col xxl={13} xl={14} lg={12} md={24} sm={24} xs={24}>
           <div className="contentDiv">
             <p>
               The <span>Benefits of</span>
@@ -24,7 +24,7 @@ function Advantage() {
             <Button size="large">Discover More About us</Button>
           </div>
         </Col>
-        <Col xxl={9} xl={10} lg={10} md={12}>
+        <Col xxl={9} xl={10} lg={12} md={24} sm={24} xs={24}>
           <img src={`/Homepageimages/Roadvantage.webp`} />
         </Col>
       </Row>
