@@ -62,3 +62,11 @@
         width: 300px;
     }
 }
+
+@media screen and (max-width:320px) {
+    .mainFeatureDiv p {
+        font-size: 15px;
+        height: 30px;
+        width: 255px;
+    }
+}

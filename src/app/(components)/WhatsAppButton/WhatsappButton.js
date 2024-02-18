@@ -8,10 +8,10 @@ function WhatsAppButton() {
   return (
     <div className="Whatsappbutton">
       <a
-        href="https://api.whatsapp.com/send?phone=971294193&text=Hello"
-        target="_blank"
+        href="https://api.whatsapp.com/send?phone=9719294193&text=Hello"
+        // target="_blank"
       >
-        <Image width={60} height={60} src={WHASTAPP} />
+        <Image width={50} height={50} src={WHASTAPP} />
       </a>
     </div>
   );
